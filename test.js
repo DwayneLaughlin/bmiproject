@@ -1,3 +1,4 @@
+// this is all unnecessary. It doesn't do anything. It was the beginning of the project but may need to be deleted
 const markHeightStart = 1.69;
 const markWeightStart = 78;
 const johnHeightStart = 1.95;
@@ -31,3 +32,15 @@ if (bmiJohnFinal > bmiMarkFinal) {
 } else {
   console.log("Mark's final BMI is higher than John's");
 }
+//ending of legacy code
+
+// getting information from input elements in html file
+const weight = document.getElementById("weight");
+const height = document.getElementById("height");
+const weightbtn = document.getElementById("weightbutton");
+
+weightbtn.addEventListener("click", function weightClick (){
+    console.log(weight.value)
+})
+
+// 
