@@ -40,6 +40,9 @@ const height = document.getElementById("height");
 const calcbtn = document.getElementById("addbutton")
 
 calcbtn.addEventListener("click", function calculate (){
-    console.log(weight.value + height.value)
+    const weightNum = parseInt(weight.value);
+    const heightNum = parseInt(height.value);
+
+    console.log(weightNum + heightNum)
 })
 // 
