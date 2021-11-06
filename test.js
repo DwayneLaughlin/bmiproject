@@ -38,9 +38,12 @@ if (bmiJohnFinal > bmiMarkFinal) {
 const weight = document.getElementById("weight");
 const height = document.getElementById("height");
 const weightbtn = document.getElementById("weightbutton");
+const heightbtn = document.getElementById("heightbutton");
 
 weightbtn.addEventListener("click", function weightClick (){
     console.log(weight.value)
 })
-
+heightbtn.addEventListener("click", function heightClick (){
+    console.log(height.value)
+})
 // 
