@@ -37,13 +37,9 @@ if (bmiJohnFinal > bmiMarkFinal) {
 // getting information from input elements in html file
 const weight = document.getElementById("weight");
 const height = document.getElementById("height");
-const weightbtn = document.getElementById("weightbutton");
-const heightbtn = document.getElementById("heightbutton");
+const calcbtn = document.getElementById("addbutton")
 
-weightbtn.addEventListener("click", function weightClick (){
-    console.log(weight.value)
-})
-heightbtn.addEventListener("click", function heightClick (){
-    console.log(height.value)
+calcbtn.addEventListener("click", function calculate (){
+    console.log(weight.value + height.value)
 })
 // 
