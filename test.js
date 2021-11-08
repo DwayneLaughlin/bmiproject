@@ -9,10 +9,11 @@ calcbtn.addEventListener("click", function calculate (){
     const weightNum = parseInt(weight.value);
     const heightNum = parseInt(height.value);
     const bmiCalc = ((weightNum / heightNum **2) * 703).toFixed(2);
-    const textBox = document.getElementById("textbox")
+    const parent = document.getElementById("parent")
+    const child = document.getElementById("child")
+    
 
-    const newText = document.createElement("p");
-    newText.innerHTML = bmiCalc
-    textBox.appendChild(newText)
-
+    const newText = child.textContent = bmiCalc;
+    
+    parent.replaceChild(child,newText)
 })
