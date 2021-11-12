@@ -3,4 +3,4 @@ Inspired by a recent decision to lose weight I created this. The main functional
 
 Future features: 
 -conversion/ability to select metric weight and height measurements
--displaying where result falls on BMI chart
+
