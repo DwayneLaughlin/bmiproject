@@ -16,6 +16,7 @@ calcbtn.addEventListener("click", function calculate() {
   const newText3 = `Your BMI is ${bmiCalc}. You are obese`;
 
   if (bmiCalc < 25 && bmiCalc > 16) {
+    //   need to figure out how to get the results on the page instead of the alert. May need to create element in here then append to div and replace on click
     console.log(newText1);
     alert(newText1);
   } else if (bmiCalc > 25 && bmiCalc < 30) {
