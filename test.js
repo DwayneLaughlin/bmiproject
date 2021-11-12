@@ -13,7 +13,7 @@ calcbtn.addEventListener("click", function calculate (){
     const child = document.getElementById("child")
     
 
-    const newText = child.textContent = bmiCalc;
+    const newText = child.textContent = `Your BMI is ${bmiCalc}`;
     
     parent.replaceChild(child,newText)
 })
