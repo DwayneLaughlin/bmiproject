@@ -12,8 +12,19 @@ calcbtn.addEventListener("click", function calculate (){
     const parent = document.getElementById("parent")
     const child = document.getElementById("child")
     
+    const newText1 = child.textContent = `Your BMI is ${bmiCalc}. You are normal weight`;
+    const newText2 = child.textContent = `Your BMI is ${bmiCalc}. You are overweight.`;
+    const newText3 = child.textContent = `Your BMI is ${bmiCalc}. You are obese`;
 
-    const newText = child.textContent = `Your BMI is ${bmiCalc}`;
+    if (bmiCalc < 25 || bmiCalc > 16) {
+        console.log(newText1)
+        parent.replaceChild(child,newText1)
+    } else if (bmiCalc > 25 && bmiCalc < 30) {
+        console.log("overweight")
+        parent.replaceChild(child,newText2)
+    } else {
+        console.log("obese")
+        parent.replaceChild(child,newText3)
+    }
     
-    parent.replaceChild(child,newText)
 })
