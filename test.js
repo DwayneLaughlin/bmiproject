@@ -23,7 +23,7 @@ calcbtn.addEventListener("click", function calculate() {
     p.appendChild(text)
     document.getElementById("parent").appendChild(p)
     
-    alert(newText1);
+    // alert(newText1);
   } else if (bmiCalc > 25 && bmiCalc < 30) {
     console.log("overweight");
     alert(newText2);
