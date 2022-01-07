@@ -23,7 +23,7 @@ calcbtn.addEventListener("click", function calculate() {
     p.appendChild(text)
     document.getElementById("parent").appendChild(p)
     
-  } else if (bmiCalc > 26 || bmiCalc < 30) {
+  } else if (bmiCalc > 26 && bmiCalc < 30) {
     console.log("overweight");
     const p = document.createElement("p");
     const text = document.createTextNode(newText2)
@@ -31,6 +31,9 @@ calcbtn.addEventListener("click", function calculate() {
     document.getElementById("parent").appendChild(p)
   } else {
     console.log("obese");
-    alert(newText3);
+    const p = document.createElement("p");
+    const text = document.createTextNode(newText3)
+    p.appendChild(text)
+    document.getElementById("parent").appendChild(p)
   }
 });
