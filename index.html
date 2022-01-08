@@ -1,24 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="app.css">
+
     <title>BMI Calculator</title>
 </head>
-<body>
-   <h1>BMI Calculator</h1> 
-   <input id="weight" type="text" value="">Please Enter Your Weight (In lbs)</input>
-   <br>
-   <br>
-   <input id="height" type="text" value="">Please enter your Height (In inches. If you are 5'6" you are 66 inches tall) </input>
-   <br>
-   <br>
-   <button id="addbutton">Calculate</button>
-   <script src="test.js"></script>
 
-   <div id="parent">
-   </div>
+<body>
+    <h1>BMI Calculator</h1>
+
+    <div class="input-box">
+        <input class="input" id="weight" type="text" value=""></br> Enter Your Weight (In lbs)</input>
+        <br>
+        <br>
+        <input class="input" id="height" type="text" value=""></br> Enter your Height (In inches. If you are 5'6" you are
+        66 inches tall) </input>
+        <br>
+        <br>
+        <button id="addbutton">Calculate</button>
+    </div>
+
+    <div class="parent" id="parent"></div>
+
+
+    <script src="test.js"></script>
+
+
 </body>
+
 </html>
