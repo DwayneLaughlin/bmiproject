@@ -12,5 +12,6 @@
     background-color: bisque;
     margin: auto;
     text-align: center;
-  
+    width: 300px;
+    height: auto;
 }
