@@ -2,6 +2,7 @@
 const weight = document.getElementById("weight");
 const height = document.getElementById("height");
 const calcbtn = document.getElementById("addbutton");
+const clearbtn = document.getElementById("clearbutton");
 
 
 // calculating bmi with height and weight
@@ -23,21 +24,27 @@ calcbtn.addEventListener("click", function calculate() {
     const text = document.createTextNode(newText1);
     p.appendChild(text);
     document.getElementById("parent").appendChild(p);
+    
   } else if (bmiCalc > 26 && bmiCalc < 30) {
     console.log("overweight");
     const p = document.createElement("p");
     const text = document.createTextNode(newText2);
     p.appendChild(text);
     document.getElementById("parent").appendChild(p);
+    
   } else {
     console.log("obese");
     const p = document.createElement("p");
     const text = document.createTextNode(newText3);
     p.appendChild(text);
     document.getElementById("parent").appendChild(p);
+    
   }
 });
 
 
-
+clearbtn.addEventListener("click", function clear (){
+  const parent = document.getElementById("parent");
+  parent.style.visibility = "hidden"
+})
 
