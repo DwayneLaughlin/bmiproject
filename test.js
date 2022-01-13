@@ -13,9 +13,9 @@ calcbtn.addEventListener("click", function calculate() {
   
   
 
-  const newText1 = `Your BMI is ${bmiCalc}. You are normal weight`;
-  const newText2 = `Your BMI is ${bmiCalc}. You are overweight.`;
-  const newText3 = `Your BMI is ${bmiCalc}. You are obese`;
+  const newText1 = `With a height of ${heightNum} inches and a weight of ${weightNum} pounds your BMI is ${bmiCalc}. You are normal weight`;
+  const newText2 = `With a height of ${heightNum} inches and a weight of ${weightNum} pounds your BMI is ${bmiCalc}. You are overweight.`;
+  const newText3 = `With a height of ${heightNum} inches and a weight of ${weightNum} pounds your BMI is ${bmiCalc}. You are obese`;
 
   if (bmiCalc < 25) {
     //   May need to create element in here then append to div and replace on click
