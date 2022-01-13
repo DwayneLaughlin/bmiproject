@@ -43,8 +43,7 @@ calcbtn.addEventListener("click", function calculate() {
 });
 
 
-clearbtn.addEventListener("click", function clear (){
-  const parent = document.getElementById("parent");
-  parent.style.visibility = "hidden"
+clearbtn.addEventListener("click", function(){
+  location.reload()
 })
 
