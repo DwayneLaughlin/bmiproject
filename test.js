@@ -44,6 +44,8 @@ calcbtn.addEventListener("click", function calculate() {
     document.getElementById("parent").appendChild(p);
     
   }
+
+  calcbtn.disabled = true;
 });
 
 
