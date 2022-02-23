@@ -17,20 +17,24 @@ calcbtn.addEventListener("click", function calculate() {
   const newText2 = `With a height of ${heightNum} inches and a weight of ${weightNum} pounds your BMI is ${bmiCalc}. You are overweight.`;
   const newText3 = `With a height of ${heightNum} inches and a weight of ${weightNum} pounds your BMI is ${bmiCalc}. You are obese`;
 
+  // code for normal weight
   if (bmiCalc < 25) {
-    //   May need to create element in here then append to div and replace on click
     console.log(newText1);
     const p = document.createElement("p");
+    p.innerHTML = ''
     const text = document.createTextNode(newText1);
-    p.appendChild(text);
+    p.append(text);
     document.getElementById("parent").appendChild(p);
     
+    //  code for overweight weight
   } else if (bmiCalc > 26 && bmiCalc < 30) {
     console.log("overweight");
     const p = document.createElement("p");
     const text = document.createTextNode(newText2);
     p.appendChild(text);
     document.getElementById("parent").appendChild(p);
+
+    // code for obese weight
     
   } else {
     console.log("obese");
