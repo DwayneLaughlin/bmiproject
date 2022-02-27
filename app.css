@@ -1,3 +1,12 @@
+.header{
+    font-family: papyrus;
+    font-size: xx-large;
+    background-image: url('headerpic.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
 .input-box{
     background-color: bisque;
     margin: auto;
@@ -18,17 +27,23 @@
 
 #text-test {
     text-align: center;
+    
+}
+
+footer{
+    font-size: smaller;
 }
 
 
-
 .test-p {
+    opacity: 0;
     animation: fade 3s ease-in forwards;
     /* animation: name duration timing-function delay iteration-count direction fill-mode; */
-    -webkit-animation: fade 3s ease-in forwards;
-    -moz-animation: fade 3s ease-in forwards;
-    -o-animation: fade 3s ease-in forwards;
-    -ms-animation: fade 3s ease-in forwards;
+    -webkit-animation: fade 3s ease-in forwards 10s;
+    -moz-animation: fade 3s ease-in forwards 10s;
+    -o-animation: fade 3s ease-in forwards 10s;
+    -ms-animation: fade 3s ease-in forwards 10s;
+    
 }
 
 @keyframes fade {
