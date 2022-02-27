@@ -3,6 +3,7 @@ const weight = document.getElementById("weight");
 const height = document.getElementById("height");
 const calcbtn = document.getElementById("addbutton");
 const clearbtn = document.getElementById("clearbutton");
+const textline = document.getElementById("text")
 
 
 // calculating bmi with height and weight
@@ -24,7 +25,7 @@ calcbtn.addEventListener("click", function calculate() {
     p.innerHTML = ''
     const text = document.createTextNode(newText1);
     p.append(text);
-    document.getElementById("parent").appendChild(p);
+    document.getElementById("parent").appendChild(p).style.backgroundColor = "green";
     
     //  code for overweight weight
   } else if (bmiCalc > 26 && bmiCalc < 30) {
@@ -32,7 +33,7 @@ calcbtn.addEventListener("click", function calculate() {
     const p = document.createElement("p");
     const text = document.createTextNode(newText2);
     p.appendChild(text);
-    document.getElementById("parent").appendChild(p);
+    document.getElementById("parent").appendChild(p).style.backgroundColor = "yellow";
 
     // code for obese weight
     
@@ -41,7 +42,7 @@ calcbtn.addEventListener("click", function calculate() {
     const p = document.createElement("p");
     const text = document.createTextNode(newText3);
     p.appendChild(text);
-    document.getElementById("parent").appendChild(p);
+    document.getElementById("parent").appendChild(p).style.backgroundColor = "red";
     
   }
 
@@ -52,4 +53,6 @@ calcbtn.addEventListener("click", function calculate() {
 clearbtn.addEventListener("click", function(){
   location.reload()
 })
+
+const tl = new TimelineMax()
 
