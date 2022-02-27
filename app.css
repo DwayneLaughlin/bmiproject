@@ -16,18 +16,30 @@
     height: auto;
 }
 
+#text-test {
+    text-align: center;
+}
+
 
 
 .test-p {
-    animation: fade 2s forwards;
-    -webkit-animation: fade 2s;
-    -moz-animation: fade 2s;
-    -o-animation: fade 2s;
-    -ms-animation: fade 2s;
+    animation: fade 3s ease-in forwards;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    -webkit-animation: fade 3s ease-in forwards;
+    -moz-animation: fade 3s ease-in forwards;
+    -o-animation: fade 3s ease-in forwards;
+    -ms-animation: fade 3s ease-in forwards;
 }
 
 @keyframes fade {
-    0%{opacity: 0; }
-    100%{opacity: 1;}
+    0%{transform: translateX(50%);
+        opacity: 0;
+        text-align: center;
+    }
+    100%{
+        opacity: 1;
+        background-color: bisque;
+        text-align: center;
+    }
 
 }

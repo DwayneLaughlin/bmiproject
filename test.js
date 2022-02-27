@@ -13,9 +13,13 @@ calcbtn.addEventListener("click", function calculate() {
   const bmiCalc = ((weightNum / heightNum ** 2) * 703).toFixed(2);
   
   
+// healthy weight messaging
+  const newText1 = `With a height of ${heightNum} inches and a weight of ${weightNum} pounds your BMI is ${bmiCalc}. You are healthy weight`;
 
-  const newText1 = `With a height of ${heightNum} inches and a weight of ${weightNum} pounds your BMI is ${bmiCalc}. You are normal weight`;
+  // overweight messaging
   const newText2 = `With a height of ${heightNum} inches and a weight of ${weightNum} pounds your BMI is ${bmiCalc}. You are overweight.`;
+  
+  // obese messaging
   const newText3 = `With a height of ${heightNum} inches and a weight of ${weightNum} pounds your BMI is ${bmiCalc}. You are obese`;
 
   // code for normal weight
